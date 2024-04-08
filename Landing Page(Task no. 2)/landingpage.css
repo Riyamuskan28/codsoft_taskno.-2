@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    overflow: hidden;
+}
+.back{
+background-image: url(5271-3840x2160-nike-shoe-background-desktop-4k.jpg);
+background-repeat: no-repeat;
+height: 100vh;
+width: 100%;
+background-size: cover;
+background-position: center;
+width: 100%;
+
+}
+.head{
+background-color: transparent;
+height: 40px;
+display: flex;
+}
+h1{
+color: white;
+padding-top: 10px;
+padding-left: 50px;
+}
+.box{
+display: flex;
+position: relative;
+left: 800px;
+}
+h3{
+padding-left: 50px;
+padding-top: 10px;
+color: white;
+
+}
+h3:hover{
+color: orangered;
+font-size: 30px;
+}
+.main{
+position: relative;
+top: 300px;
+left: 200px;
+}
+h1:hover{
+color: orangered;
+/* font-size: 40px; */
+}
+.btn{
+background-color: transparent;
+height: 40px;
+width: 100px;
+position: relative;
+/* border: 3px solid orangered; */
+/* border-radius: 20px; */
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+/* padding-top: 10px; */
+cursor: pointer;
+}
+.btn:hover{
+background-color: orangered;
+color: white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+box-shadow: 0 0 5px rgb(255, 94, 0),
+0 0 25px orange,
+0 0 50px orange,
+0 0 100px orange,
+0 0 200px orange;
+}
+.tagline{
+color: white;
+font-size: 28px;
+position: relative;
+right: 120px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ni:hover{
+color: greenyellow;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn::before{
+    content: "";
+    position:absolute;
+   left: 0;
+   
+   top:0;
+   width: 0;
+   height: 0;
+   border-top: 3px solid orangered;
+   border-right: 3px solid orangered;
+    animation: border-top-right 3s infinite alternate;
+}
+.btn::after{
+    content: "";
+    position:absolute;
+   right: 0;
+   bottom:0;
+   width: 0;
+   height: 0;
+   border-bottom: 3px solid orangered;
+   border-left: 3px solid orangered;
+    animation: border-bottom-left 3s infinite alternate;
+}
+@keyframes border-top-right {
+    0%{width: 0px; height: 0px;}
+    25%{width: 100px; height: 0px;}
+    50%{width: 100px; height: 38px;}
+    100%{width: 100px; height: 38px;}
+}
+@keyframes border-bottom-left{
+    0%{width: 0px; height: 0px; opacity: 0;}
+    50%{width: 0px; height: 0px; opacity: 0;}
+    50.1%{width: 0px; height: 0px; opacity: 1;}
+    75%{width: 100px; height: 0px; opacity: 1;}
+    100%{width: 100px; height: 38px; opacity: 1;}
+}
